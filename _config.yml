@@ -1,0 +1,7 @@
+exclude:
+  - Lab1/node_modules
+  - Lab2/node_modules
+  - Lab3/node_modules
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
