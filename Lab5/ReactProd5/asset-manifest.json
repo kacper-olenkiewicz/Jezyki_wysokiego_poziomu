@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Jezyki_wysokiego_poziomu/Lab5/ReactProd5/static/css/main.193ee4a3.css",
+    "main.js": "/Jezyki_wysokiego_poziomu/Lab5/ReactProd5/static/js/main.934345b1.js",
+    "index.html": "/Jezyki_wysokiego_poziomu/Lab5/ReactProd5/index.html",
+    "main.193ee4a3.css.map": "/Jezyki_wysokiego_poziomu/Lab5/ReactProd5/static/css/main.193ee4a3.css.map",
+    "main.934345b1.js.map": "/Jezyki_wysokiego_poziomu/Lab5/ReactProd5/static/js/main.934345b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.193ee4a3.css",
+    "static/js/main.934345b1.js"
+  ]
+}
