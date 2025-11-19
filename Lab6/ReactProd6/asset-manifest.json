@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Jezyki_wysokiego_poziomu/Lab6/ReactProd6/static/css/main.bb208cfd.css",
+    "main.js": "/Jezyki_wysokiego_poziomu/Lab6/ReactProd6/static/js/main.fe7c6a6a.js",
+    "index.html": "/Jezyki_wysokiego_poziomu/Lab6/ReactProd6/index.html",
+    "main.bb208cfd.css.map": "/Jezyki_wysokiego_poziomu/Lab6/ReactProd6/static/css/main.bb208cfd.css.map",
+    "main.fe7c6a6a.js.map": "/Jezyki_wysokiego_poziomu/Lab6/ReactProd6/static/js/main.fe7c6a6a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb208cfd.css",
+    "static/js/main.fe7c6a6a.js"
+  ]
+}

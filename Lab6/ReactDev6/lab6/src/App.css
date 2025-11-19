@@ -1,0 +1,222 @@
+:root {
+  --bg-light: #f7f9fc;
+  --bg-dark: #0f172a;
+  --surface-light: #ffffff;
+  --surface-dark: #1f2937;
+  --text-light: #0f172a;
+  --text-dark: #f8fafc;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --border: rgba(15, 23, 42, 0.08);
+  --shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg-light);
+  color: var(--text-light);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body[data-theme="dark"] {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.App {
+  max-width: 960px;
+  margin: 48px auto;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  background: var(--surface-light);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.App--dark {
+  background: var(--surface-dark);
+  color: var(--text-dark);
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.App-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.card {
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.App--dark .card {
+  background: rgba(30, 41, 59, 0.85);
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px rgba(15, 23, 42, 0.15);
+}
+
+h1,
+h2 {
+  margin: 0 0 12px 0;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.muted {
+  color: #64748b;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(37, 99, 235, 0.4);
+}
+
+.btn-ghost:hover {
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stack code {
+  background: rgba(37, 99, 235, 0.08);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;
+}
+
+.counter-display {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  background: #fff;
+  color: var(--text-light);
+}
+
+input:focus {
+  outline: 2px solid rgba(37, 99, 235, 0.4);
+  border-color: var(--accent);
+}
+
+.App--dark input {
+  background: rgba(15, 23, 42, 0.6);
+  color: var(--text-dark);
+  border-color: rgba(148, 163, 184, 0.5);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-output {
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.05);
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.9rem;
+}
+
+.App--dark .form-output {
+  background: rgba(148, 163, 184, 0.1);
+}
+
+.prime-output {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.measure-box {
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  background: rgba(37, 99, 235, 0.07);
+  border: 1px dashed rgba(37, 99, 235, 0.4);
+}
+
+@media (max-width: 640px) {
+  .App {
+    margin: 24px;
+    padding: 24px;
+  }
+
+  .App-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button-row {
+    flex-direction: column;
+  }
+}
